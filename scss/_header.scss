@@ -25,52 +25,54 @@
       }
 
       &--mobile {
-         display: none;
          padding: 12px 24px 24px 24px;
 
-         &.active {
+         transform: translateX(-100%);
+         transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+         display: flex;
+         flex-direction: column;
+         position: fixed;
+         width: 100%;
+         height: 100vh;
+         overflow-y: auto;
+         background-color: white;
+         top: 0;
+         left: 0;
+         justify-content: space-between;
+
+         & .header__menu-list {
+            margin-top: 32px;
             display: flex;
             flex-direction: column;
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            overflow-y: auto;
-            background-color: white;
-            top: 0;
-            left: 0;
+         }
+         & .header__create {
+            display: block;
+            margin-bottom: 12px;
+         }
+         & .header__login {
+            display: block;
+         }
+
+         & .header__mobile-top {
+            display: flex;
             justify-content: space-between;
+            padding-right: 24px;
+            align-items: center;
+         }
+         & .header__logo {
+            width: 56px;
+            height: 56px;
+         }
+         &.active {
             z-index: 6;
-
-            & .header__menu-list {
-               margin-top: 32px;
-               display: flex;
-               flex-direction: column;
-            }
-            & .header__create {
-               display: block;
-               margin-bottom: 12px;
-            }
-            & .header__login {
-               display: block;
-            }
-
-            & .header__mobile-top {
-               display: flex;
-               justify-content: space-between;
-               padding-right: 24px;
-               align-items: center;
-            }
-            & .header__logo {
-               width: 56px;
-               height: 56px;
-            }
+            transform: translateX(0);
          }
       }
    }
 
    &__menu-list {
       @media (max-width: 1025px) {
-         display: block;
+         display: none;
          // display: flex;
          // flex-direction: column;
          // position: absolute;
@@ -88,7 +90,7 @@
       }
 
       @media (max-width: 1025px) {
-         padding: 24px;
+         padding: 24px 24px 24px 0px;
       }
    }
 
