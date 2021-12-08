@@ -69,18 +69,24 @@ body {
 
 .button {
    padding: 16px 32px;
-   // border: 2px solid rgba(239, 63, 81, 0.16);
-   border: 2px solid transparent;
-   border-image: linear-gradient(rgba(239, 63, 81, 0.24), rgba(252, 103, 67, 0.24));
+   border: 2px solid rgba(239, 63, 81, 0.16);
    border-radius: 16px;
-   border-image-slice: 1;
    font-weight: 500;
    font-size: 16px;
 
    text-align: center;
    color: #000000;
    display: inline-block;
+   transition: all 0.3s;
 
+   &:hover {
+      border: 2px solid rgba(239, 63, 81, 1);
+   }
+
+   &:active {
+      border: 2px solid rgba(239, 63, 81, 1);
+      background: linear-gradient(180deg, rgba(239, 63, 81, 0.06) 0%, rgba(252, 103, 67, 0.06) 100%);
+   }
    &--colored {
       padding: 14px 32px;
       background: #ff5533;
