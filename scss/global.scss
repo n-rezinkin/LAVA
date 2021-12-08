@@ -114,3 +114,52 @@ p {
       line-height: 24px !important;
    }
 }
+
+.burger {
+   position: relative;
+   width: 24px;
+   height: 24px;
+   display: none;
+
+   @media (max-width: 1025px) {
+      display: block;
+   }
+
+   &:before {
+      position: absolute;
+      content: "";
+      top: 7px;
+      right: 0;
+      width: 20px;
+      height: 2px;
+      background-color: #0a0a0d;
+   }
+
+   &:after {
+      position: absolute;
+      content: "";
+      bottom: 7px;
+      right: 0;
+      width: 14px;
+      height: 2px;
+      background-color: #0a0a0d;
+   }
+
+   &.active {
+      width: 24px;
+      height: 24px;
+      &:before {
+         content: "";
+         top: 11px;
+         transform: rotate(45deg);
+      }
+
+      &:after {
+         width: 20px;
+         height: 2px;
+         content: "";
+         bottom: 11px;
+         transform: rotate(-45deg);
+      }
+   }
+}
