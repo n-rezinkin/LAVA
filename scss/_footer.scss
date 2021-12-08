@@ -1,0 +1,93 @@
+.footer {
+   &__content {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 50px;
+
+      @media (max-width: 1025px) {
+         padding-top: 24px;
+      }
+      @media (max-width: 769px) {
+         flex-direction: column;
+         padding-top: 44px;
+      }
+   }
+
+   &__copyright-box {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 769px) {
+         flex-direction: column;
+         align-items: start;
+      }
+   }
+
+   &__logo {
+      margin-right: 20px;
+   }
+
+   &__company-name {
+      font-weight: normal;
+      font-size: 14px !important;
+      line-height: 20px !important;
+
+      @media (max-width: 769px) {
+         margin-top: 12px;
+      }
+   }
+
+   &__company-license {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.2px;
+      color: rgba(0, 0, 0, 0.32);
+   }
+
+   &__menu {
+      display: flex;
+      margin-top: 34px;
+
+      @media (max-width: 769px) {
+         flex-direction: column;
+      }
+   }
+
+   &__menu-item {
+      margin-right: 32px;
+
+      @media (max-width: 769px) {
+         margin-right: 0;
+         margin-top: 8px;
+      }
+   }
+
+   &__menu-link {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.2px;
+      color: #000000;
+   }
+
+   &__help-text {
+      font-weight: normal;
+      font-size: 16px !important;
+      line-height: 24px !important;
+      letter-spacing: -0.12px;
+      color: #666666;
+      margin-bottom: 12px;
+
+      @media (max-width: 769px) {
+         margin-top: 32px;
+      }
+   }
+
+   &__tg {
+      margin-right: 8px;
+   }
+
+   &__mail {
+   }
+}

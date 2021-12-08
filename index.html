@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Лава</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/hystmodal.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+   <div class="wrapper">
+      <header class="header">
+         <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+               <a href="#" class="header__logo">
+                  <img src="img/logo.svg" alt="LAVA">
+               </a>
+               <nav class="header__menu">
+                  <ul class="header__menu-list d-flex">
+                     <li class="header__menu-item"><a href="#" class="header__menu-link">Предложить идею</a></li>
+                     <li class="header__menu-item"><a href="#" class="header__menu-link">Документация</a></li>
+                     <li class="header__menu-item"><a href="#" class="header__menu-link">Помощь</a></li>
+                  </ul>
+               </nav>
+               <a href="#" class="header__login button">
+                  Войти
+               </a>
+            </div>
+         </div>
+      </header>
+
+      <section class="top">
+         <div class="container">
+            <div class="top__content">
+               <div class="top__left">
+                  <h1 class="top__title">
+                     Приём <br> платежей <br> для бизнеса
+                  </h1>
+                  <p class="top__text--large">
+                     С быстрой интеграцией, надежными платежами и комфортной комиссией.
+                  </p>
+                  <p class="top__text--small">
+                     Отправляйте деньги на банковские карты и в кошельки.
+                  </p>
+                  <div class="top__buttons">
+                     <a href="#" class="top__buttons-connect button--colored">Подключить LAVA</a>
+                     <a href="#" class="top__buttons-question button">Задать вопрос</a>
+                  </div>
+               </div>
+               <div class="top__image">
+                  <picture>
+                     <source srcset="img/top/phone-320w.png" media="(max-width: 415px)">
+                     <source srcset="img/top/phone-345w.png" media="(max-width: 1025px)">
+                     <source srcset="img/top/phone-470w.png" media="(max-width: 1440px)">
+
+
+                     <img src="img/top/phone.png">
+                  </picture>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="cards">
+         <div class="container">
+            <div class="cards__content">
+               <div class="cards__item">
+                  <h3 class="cards__title">
+                     Простой API и документация
+                  </h3>
+                  <p class="cards__text">
+                     Интегрируй Лаву на свой сайт и принимай платежи автоматически
+                  </p>
+               </div>
+               <div class="cards__item">
+                  <h3 class="cards__title">
+                     Безопасные <br> платежи
+                  </h3>
+                  <p class="cards__text">
+                     С надёжными методами шифрования, обработки и хранения данных
+                  </p>
+               </div>
+               <div class="cards__item">
+                  <h3 class="cards__title">
+                     Реферальная <br> система
+                  </h3>
+                  <p class="cards__text">
+                     С друзьями выгодне! Зови партнёров, чтобы получить лучшие условия.
+                  </p>
+               </div>
+               <div class="cards__item">
+                  <h3 class="cards__title">
+                     Быстрый вывод <br> куда угодно
+                  </h3>
+                  <p class="cards__text">
+                     Не замораживаем баланс — выводи сразу и на любые кошельки и карты.
+                  </p>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <section class="interface">
+         <div class="container">
+            <div class="interface__content">
+               <h3 class="interface__title">
+                  В удобном интерфейсе
+               </h3>
+               <p class="interface__text">
+                  Отслеживайте историю, баланс в разных валютах, выставляй счета.
+               </p>
+               <div class="interface__image-box">
+                  <picture>
+                     <source srcset="img/interface/interface-image-small.png" media="(max-width: 769px)">
+
+                     <img class="interface__image" src="img/interface/interface-image.png">
+                  </picture>
+               </div>
+
+
+
+            </div>
+         </div>
+      </section>
+
+      <section class="payment">
+         <div class="container">
+            <div class="payment__content">
+               <h3 class="payment__title">Плати только <br> за успешные платежи</h3>
+               <p class="payment__text">
+                  Без комиссии за отмену платежа или ошибки. Только <br> комфортные тарифы на успешные платежи
+               </p>
+               <div class="payment__types">
+                  <div class="payment__item">
+                     <div class="payment__item-content">
+                        <h4 class="payment__item-title">Банковские карты</h4>
+                        <ul class="payment__commission-list">
+                           <li class="payment__commission-item">12% <p>комиссия</p>
+                           </li>
+                           <li class="payment__commission-item">50₽ <p>минимум</p>
+                           </li>
+                        </ul>
+                     </div>
+                     <img class="payment__logo--first" src="img/payments/Visa.svg" alt="VISA">
+                     <img class="payment__logo--second" src="img/payments/Mastercard.svg" alt="Mastercard">
+                  </div>
+                  <div class="payment__item">
+                     <div class="payment__item-content">
+                        <h4 class="payment__item-title">Advcash кошелёк</h4>
+                        <ul class="payment__commission-list">
+                           <li class="payment__commission-item">7% <p>комиссия</p>
+                           </li>
+                           <li class="payment__commission-item">12₽ <p>минимум</p>
+                           </li>
+                        </ul>
+                     </div>
+                     <img class="payment__logo" src="img/payments/Advcash.svg" alt="Advcash">
+                  </div>
+                  <div class="payment__item">
+                     <div class="payment__item-content">
+                        <h4 class="payment__item-title">Юмани кошелёк</h4>
+                        <ul class="payment__commission-list">
+                           <li class="payment__commission-item">12% <p>комиссия</p>
+                           </li>
+                           <li class="payment__commission-item">20₽ <p>минимум</p>
+                           </li>
+                        </ul>
+                     </div>
+                     <img class="payment__logo" src="img/payments/YooMoney.svg" alt="YooMoney">
+                  </div>
+                  <div class="payment__item">
+                     <div class="payment__item-content">
+                        <h4 class="payment__item-title">QIWI кошелёк</h4>
+                        <ul class="payment__commission-list">
+                           <li class="payment__commission-item">12% <p>комиссия</p>
+                           </li>
+                           <li class="payment__commission-item">10₽ <p>минимум</p>
+                           </li>
+                        </ul>
+                     </div>
+                     <img class="payment__logo" src="img/payments/QIWI.svg" alt="QIWI">
+                  </div>
+                  <div class="payment__item">
+                     <div class="payment__item-content">
+                        <h4 class="payment__item-title">Payeer</h4>
+                        <ul class="payment__commission-list">
+                           <li class="payment__commission-item">7% <p>комиссия</p>
+                           </li>
+                           <li class="payment__commission-item">15₽ <p>минимум</p>
+                           </li>
+                        </ul>
+                     </div>
+                     <img class="payment__logo" src="img/payments/Payeer.svg" alt="Payeer">
+                  </div>
+                  <div class="payment__item">
+                     <div class="payment__item-content">
+                        <h4 class="payment__item-title">Мобильные операторы</h4>
+                        <ul class="payment__commission-list">
+                           <li class="payment__commission-item">12% <p>комиссия</p>
+                           </li>
+                           <li class="payment__commission-item">50₽ <p>минимум</p>
+                           </li>
+                        </ul>
+                     </div>
+                     <img class="payment__logo--first" src="img/payments/Tele2.svg" alt="Tele2">
+                     <img class="payment__logo--second" src="img/payments/Beline.svg" alt="Beline">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="info">
+         <div class="container">
+            <div class="info__content">
+               <div class="info__left">
+                  <h3 class="info__title">Начни принимать <br> платежи сегодня</h3>
+                  <p class="info__text">Зарегистрируйтесь и подключите свой сайт. Или напишите в поддержку, если у вас
+                     остались вопросы.</p>
+               </div>
+               <div class="info__buttons">
+                  <a class="info__connect button--colored">Подключить LAVA</a>
+                  <a href="" class="info__question button">Задать вопрос</a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__content">
+               <div class="footer__info">
+                  <div class="footer__copyright-box">
+                     <img src="img/logo-black-white.svg" alt="LAVA" class="footer__logo">
+                     <div class="footer__copyright-company">
+                        <p class="footer__company-name">ООО «ЛАВ-А»</p>
+                        <span class="footer__company-license">Лицензия ЦБ РФ № 2368 от 06.07.2021 </span>
+                     </div>
+                  </div>
+                  <ul class="footer__menu">
+                     <li class="footer__menu-item">
+                        <a href="#" class="footer__menu-link">Политика конфиденциальности</a>
+                     </li>
+                     <li class="footer__menu-item">
+                        <a href="#" class="footer__menu-link">Политика в отношении Cookies</a>
+                     </li>
+                     <li class="footer__menu-item">
+                        <a href="#" class="footer__menu-link">Оферта</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer__help">
+                  <p class="footer__help-text">
+                     Нужна помощь?
+                  </p>
+                  <a href="#" class="footer__tg">
+                     <img src="img/Telegram.svg" alt="Telegram">
+                  </a>
+                  <a href="#" class="footer__mail">
+                     <img src="img/mail.svg" alt="mail">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+   </div>
+   <script src="js/hystmodal.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>

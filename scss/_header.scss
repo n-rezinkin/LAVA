@@ -1,0 +1,36 @@
+.header {
+   height: 116px;
+   display: flex;
+   align-items: center;
+   &__logo {
+   }
+
+   &__menu {
+      @media (max-width: 1025px) {
+         display: none;
+      }
+   }
+
+   &__menu-list {
+   }
+
+   &__menu-item {
+      margin-right: 32px;
+
+      &:last-of-type {
+         margin-right: 0;
+      }
+   }
+
+   &__menu-link {
+      font-size: 18px;
+      line-height: 24px;
+      color: #474747;
+   }
+
+   &__login {
+      @media (max-width: 1025px) {
+         display: none;
+      }
+   }
+}
