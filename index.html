@@ -19,14 +19,17 @@
       <header class="header">
          <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-               <a href="#" class="header__logo">
-                  <img src="img/logo.svg" alt="LAVA">
-               </a>
+               <div class="header__logo">
+                  <a href="#" class="header__logo-link">
+                     <i class="header__logo-icon"></i>
+                  </a>
+               </div>
                <nav class="header__menu" id="menu">
                   <ul class="header__menu-list d-flex">
-                     <li class="header__menu-item"><a href="#" class="header__menu-link">Предложить идею</a></li>
-                     <li class="header__menu-item"><a href="#" class="header__menu-link">Документация</a></li>
-                     <li class="header__menu-item"><a href="#" class="header__menu-link">Помощь</a></li>
+                     <li class="header__menu-item"><a href="https://lava.ru/tariffs"
+                           class="header__menu-link">Тарифы</a></li>
+                     <li class="header__menu-item"><a target="_blank" href="https://docs.lava.ru/"
+                           class="header__menu-link">Документация</a></li>
                   </ul>
                </nav>
 
@@ -34,19 +37,20 @@
                <nav class="header__menu--mobile" id="mobile-menu">
                   <div>
                      <div class="header__mobile-top">
-                        <a href="#" class="header__logo"><img src="img/logo.svg" alt="LAVA"></a>
+                        <a href="#" class="header__logo"><i class="header__logo-icon"></i></a>
                         <div class="header__mobile-burger burger" id="mobile-burger"></div>
                      </div>
 
                      <ul class="header__menu-list d-flex">
-                        <li class="header__menu-item"><a href="#" class="header__menu-link">Предложить идею</a></li>
-                        <li class="header__menu-item"><a href="#" class="header__menu-link">Документация</a></li>
-                        <li class="header__menu-item"><a href="#" class="header__menu-link">Помощь</a></li>
+                        <li class="header__menu-item"><a href="https://lava.ru/tariffs"
+                              class="header__menu-link">Тарифы</a></li>
+                        <li class="header__menu-item"><a target="_blank" href="https://docs.lava.ru/"
+                              class="header__menu-link">Документация</a></li>
                      </ul>
                   </div>
                   <div class="header__menu-btns">
-                     <a href="#" class="header__create button--colored">Создать кошелёк</a>
-                     <a href="#" class="header__login button">
+                     <a href="https://lava.ru/signup" class="header__create button--colored">Создать кошелёк</a>
+                     <a href="https://lava.ru/login" class="header__login button">
                         Войти
                      </a>
                   </div>
@@ -54,7 +58,7 @@
                </nav>
 
 
-               <a href="#" class="header__login button">
+               <a href="https://lava.ru/login" class="header__login button">
                   Войти
                </a>
                <div class="burger" id="burger"></div>
@@ -77,19 +81,14 @@
                      Отправляйте деньги на банковские карты и в кошельки.
                   </p>
                   <div class="top__buttons">
-                     <a href="#" class="top__buttons-connect button--colored">Подключить LAVA</a>
-                     <a href="#" class="top__buttons-question button">Задать вопрос</a>
+                     <a href="https://lava.ru/signup" class="top__buttons-connect button--colored">Подключить LAVA</a>
                   </div>
                </div>
-               <div class="top__image">
-                  <picture>
-                     <source srcset="img/top/phone-320w.png" media="(max-width: 415px)">
-                     <source srcset="img/top/phone-345w.png" media="(max-width: 1025px)">
-                     <source srcset="img/top/phone-470w.png" media="(max-width: 1440px)">
+               <div class="top__image-box">
+                  <div class="top__image">
 
+                  </div>
 
-                     <img src="img/top/phone.png">
-                  </picture>
                </div>
             </div>
          </div>
@@ -99,36 +98,54 @@
          <div class="container">
             <div class="cards__content">
                <div class="cards__item">
-                  <h3 class="cards__title">
-                     Простой API и документация
-                  </h3>
-                  <p class="cards__text">
-                     Интегрируй Лаву на свой сайт и принимай платежи автоматически
-                  </p>
+                  <div class="cards__text-box">
+                     <h3 class="cards__title">
+                        Простой API и документация
+                     </h3>
+                     <p class="cards__text">
+                        Интегрируй Лаву на свой сайт и принимай платежи автоматически
+                     </p>
+                  </div>
+                  <div class="cards__image-box--api">
+
+                  </div>
                </div>
                <div class="cards__item">
-                  <h3 class="cards__title">
-                     Безопасные <br> платежи
-                  </h3>
-                  <p class="cards__text">
-                     С надёжными методами шифрования, обработки и хранения данных
-                  </p>
+                  <div class="cards__text-box">
+                     <h3 class="cards__title">
+                        Безопасные <br> платежи
+                     </h3>
+                     <p class="cards__text">
+                        С надёжными методами шифрования, обработки и хранения данных
+                     </p>
+                  </div>
+                  <div class="cards__image-box--payments">
+                  </div>
                </div>
                <div class="cards__item">
-                  <h3 class="cards__title">
-                     Реферальная <br> система
-                  </h3>
-                  <p class="cards__text">
-                     С друзьями выгодне! Зови партнёров, чтобы получить лучшие условия.
-                  </p>
+                  <div class="cards__text-box">
+                     <h3 class="cards__title">
+                        Реферальная <br> система
+                     </h3>
+                     <p class="cards__text">
+                        С друзьями выгоднее! Зови партнёров, чтобы получить лучшие условия.
+                     </p>
+                  </div>
+                  <div class="cards__image-box--referal">
+                  </div>
                </div>
                <div class="cards__item">
-                  <h3 class="cards__title">
-                     Быстрый вывод <br> куда угодно
-                  </h3>
-                  <p class="cards__text">
-                     Не замораживаем баланс — выводи сразу и на любые кошельки и карты.
-                  </p>
+                  <div class="cards__text-box">
+                     <h3 class="cards__title">
+                        Быстрый вывод <br> куда угодно
+                     </h3>
+                     <p class="cards__text">
+                        Не замораживаем баланс — выводи сразу и на любые кошельки и карты.
+                     </p>
+                  </div>
+                  <div class="cards__image-box--withdraw">
+                  </div>
+
                </div>
 
             </div>
@@ -144,15 +161,8 @@
                <p class="interface__text">
                   Отслеживайте историю, баланс в разных валютах, выставляй счета.
                </p>
-               <div class="interface__image-box">
-                  <img class="interface__image" src="img/interface/interface-image.png">
-                  <!-- <picture>
-                      <source srcset="img/interface/interface-image-small.png" media="(max-width: 769px)">
-
-                     <img class="interface__image" src="img/interface/interface-image.png">
-                  </picture> -->
-               </div>
-
+               <img class="interface__image" src="img/interface/interface-large.svg" alt="Interface">
+               <img src="img/interface/interface-small.svg" alt="Interface" class="interface__image-mobile">
 
 
             </div>
@@ -162,9 +172,9 @@
       <section class="payment">
          <div class="container">
             <div class="payment__content">
-               <h3 class="payment__title">Плати только <br> за успешные платежи</h3>
+               <h3 class="payment__title">Плати только за успешные платежи</h3>
                <p class="payment__text">
-                  Без комиссии за отмену платежа или ошибки. Только <br> комфортные тарифы на успешные платежи
+                  Без комиссии за отмену платежа или ошибки. Только комфортные тарифы на успешные платежи
                </p>
                <div class="payment__types">
                   <div class="payment__item">
@@ -194,7 +204,7 @@
                   </div>
                   <div class="payment__item">
                      <div class="payment__item-content">
-                        <h4 class="payment__item-title">Юмани кошелёк</h4>
+                        <h4 class="payment__item-title">ЮMoney кошелёк</h4>
                         <ul class="payment__commission-list">
                            <li class="payment__commission-item">12% <p>комиссия</p>
                            </li>
@@ -255,8 +265,7 @@
                      остались вопросы.</p>
                </div>
                <div class="info__buttons">
-                  <a class="info__connect button--colored">Подключить LAVA</a>
-                  <a href="" class="info__question button">Задать вопрос</a>
+                  <a href="https://lava.ru/signup" class="info__connect button--colored">Подключить LAVA</a>
                </div>
             </div>
          </div>
@@ -275,13 +284,15 @@
                   </div>
                   <ul class="footer__menu">
                      <li class="footer__menu-item">
-                        <a href="#" class="footer__menu-link">Политика конфиденциальности</a>
+                        <a target="_blank" href="https://lava.ru/assets/documents/privacy_policy.pdf"
+                           class="footer__menu-link">Политика конфиденциальности</a>
                      </li>
-                     <li class="footer__menu-item">
+                     <!-- <li class="footer__menu-item">
                         <a href="#" class="footer__menu-link">Политика в отношении Cookies</a>
-                     </li>
+                     </li> -->
                      <li class="footer__menu-item">
-                        <a href="#" class="footer__menu-link">Оферта</a>
+                        <a target="_blank" href="https://lava.ru/assets/documents/public_offer.pdf"
+                           class="footer__menu-link">Публичная оферта</a>
                      </li>
                   </ul>
                </div>
@@ -289,11 +300,11 @@
                   <p class="footer__help-text">
                      Нужна помощь?
                   </p>
-                  <a href="#" class="footer__tg">
-                     <img src="img/Telegram.svg" alt="Telegram">
+                  <a href="https://telegram.me/LAVA_RU" class="footer__tg">
+                     <img src="/assets/img/Telegram.svg" alt="Telegram">
                   </a>
-                  <a href="#" class="footer__mail">
-                     <img src="img/mail.svg" alt="mail">
+                  <a href="mailto:help@lava.ru" class="footer__mail">
+                     <img src="/assets/img/mail.svg" alt="mail">
                   </a>
                </div>
             </div>

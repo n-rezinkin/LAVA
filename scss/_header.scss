@@ -1,21 +1,49 @@
 .header {
-   height: 116px;
    display: flex;
    align-items: center;
    position: fixed;
    background-color: white;
    width: 100%;
    z-index: 8;
-   height: 80px;
+   height: 116px;
 
-   @media (max-width: 1025px) {
-      position: fixed;
-   }
-   &__logo {
+   @media (max-width: 1439px) {
+      height: 80px;
    }
 
+   @media (max-width: 767px) {
+      height: 72px;
+   }
+
+   @media (max-width: 413px) {
+      height: 64px;
+   }
+
+   &__logo-link {
+      display: inline-block;
+   }
+   &__logo-icon {
+      margin: 0;
+      width: 56px;
+      height: 56px;
+      background-image: url("../img/lava-logo.svg");
+      display: inline-block;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+
+      @media (max-width: 1439px) {
+         height: 56px;
+         width: 56px;
+      }
+      @media (max-width: 767px) {
+         height: 44px;
+         width: 44px;
+      }
+   }
    &__menu {
-      @media (max-width: 1025px) {
+      @media (max-width: 767px) {
          display: none;
          // &.active {
          //    display: block;
@@ -30,7 +58,7 @@
       }
 
       &--mobile {
-         padding: 12px 24px 24px 24px;
+         padding: 19px 15px 12px 12px;
 
          transform: translateX(-100%);
          transition: transform 0.3s ease, -webkit-transform 0.3s ease;
@@ -38,12 +66,15 @@
          flex-direction: column;
          position: fixed;
          width: 100%;
-         height: 100vh;
-         overflow-y: auto;
+         height: 100%;
+         // overflow-y: auto;
          background-color: white;
          top: 0;
          left: 0;
          justify-content: space-between;
+
+         @media (max-width: 415px) {
+         }
 
          & .header__menu-list {
             margin-top: 32px;
@@ -58,23 +89,19 @@
             display: block;
          }
 
+         & .header__menu-item {
+            padding: 12px 12px 12px 0;
+         }
+
          & .header__mobile-top {
             display: flex;
             justify-content: space-between;
-            padding-right: 24px;
+
             align-items: center;
-         }
-         & .header__logo {
-            width: 56px;
-            height: 56px;
          }
          &.active {
             z-index: 6;
             transform: translateX(0);
-         }
-
-         & .header__menu-btns {
-            margin-bottom: 100px;
          }
       }
    }
@@ -92,7 +119,29 @@
    }
 
    &__menu-item {
-      margin-right: 32px;
+      padding: 0 16px;
+
+      position: relative;
+
+      &:after {
+         bottom: -5px;
+         left: 50%;
+         content: "•";
+         width: 6px;
+         height: 6px;
+         position: absolute;
+         color: transparent;
+      }
+
+      &:hover {
+         color: #000;
+         &::after {
+            color: #f53;
+            @media (max-width: 1025px) {
+               color: transparent;
+            }
+         }
+      }
 
       &:last-of-type {
          margin-right: 0;
@@ -109,10 +158,10 @@
       color: #474747;
 
       &:hover {
-         text-decoration: underline;
+         color: black;
       }
 
-      @media (max-width: 1025px) {
+      @media (max-width: 767px) {
          font-weight: 600;
          font-size: 24px;
          line-height: 32px;
@@ -121,7 +170,7 @@
    }
 
    &__login {
-      @media (max-width: 1025px) {
+      @media (max-width: 767px) {
          display: none;
       }
    }
