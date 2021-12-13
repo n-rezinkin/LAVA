@@ -127,25 +127,31 @@
 
    &__image-box {
       &--api {
-         background-image: url("../img/cards/API.svg");
+         background-image: url("../img/cards/API.png");
          background-repeat: no-repeat;
          background-size: contain;
          background-position: bottom right;
          width: 455px;
          height: 424px;
          align-self: flex-end;
+         margin-top: 44px;
+
+         @media (max-width: 1023px) {
+            margin-top: 25px;
+         }
       }
       &--payments {
-         background-image: url("../img/cards/payments.svg");
+         background-image: url("../img/cards/payments.png");
          background-repeat: no-repeat;
          background-size: contain;
          background-position: bottom;
          width: 100%;
          height: 674px;
+         margin-top: 44px;
       }
 
       &--referal {
-         background-image: url("../img/cards/referal.svg");
+         background-image: url("../img/cards/referal.png");
          background-repeat: no-repeat;
          background-size: contain;
          background-position: bottom;
@@ -153,7 +159,8 @@
          justify-self: flex-start;
          height: 415px;
          width: 415px;
-         margin-bottom: 55px;
+
+         margin-top: 44px;
 
          @media (max-width: 1439px) {
             margin-bottom: 35px;
