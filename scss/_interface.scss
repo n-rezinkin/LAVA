@@ -81,7 +81,7 @@
       border-radius: 24px;
       background: white;
 
-      @media (max-width: 415px) {
+      @media (max-width: 767px) {
          display: none;
       }
    }
@@ -90,7 +90,7 @@
       display: none;
       z-index: 2;
 
-      @media (max-width: 415px) {
+      @media (max-width: 767px) {
          display: block;
          font-size: 28px;
          line-height: 36px;
