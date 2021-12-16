@@ -45,9 +45,9 @@
    }
 
    &__item {
-      background: #f9f9f9;
+      background: #F9F9F9;
       border-radius: 20px;
-      padding: 20px;
+      padding: 20px 30px 20px 20px;
       width: calc((100% / 3) - 12px);
 
       margin: 12px 0;
@@ -74,13 +74,13 @@
          // flex: 1 1 calc((100% / 2) - 16px);
       }
       @media (max-width: 767px) {
-         padding: 16px;
+         padding: 16px 26px 16px 16px;
          // flex: 1 1 auto;
          width: 100%;
       }
 
       @media (max-width: 413px) {
-         padding: 12px;
+         padding: 12px 22px 12px 12px;
       }
    }
 
@@ -99,47 +99,119 @@
          width: 64px;
          height: 64px;
       }
-      &--first {
-         z-index: 3;
 
+      &--tele {
+         transform-style: preserve-3d;
+         background: transparent;
+         background-image: url('../img/payments/tele2.svg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         width: 106px;
+         height: 106px;
+         position: relative;
          @media (max-width: 1025px) {
             width: 88px;
             height: 88px;
          }
-
+   
          @media (max-width: 767px) {
             width: 80px;
             height: 80px;
          }
-
+   
          @media (max-width: 413px) {
             width: 64px;
             height: 64px;
          }
+
+         &:before {
+            transform: translateZ(-1px);
+            background-image: url('../img/payments/Beline.svg');
+            content:'';
+            position: absolute;
+            width: 106px;
+            height: 106px;
+            background-size: contain;
+            background-position: bottom right;
+            bottom: -30px;
+            right: -30px;
+            background-repeat: no-repeat;
+
+            @media (max-width: 1025px) {
+               width: 88px;
+               height: 88px;
+            }
+      
+            @media (max-width: 767px) {
+               width: 80px;
+               height: 80px;
+            }
+      
+            @media (max-width: 413px) {
+               width: 64px;
+               height: 64px;
+            }
+         }
+
       }
 
-      &--second {
-         position: absolute;
-         content: "";
-         bottom: 0;
-         right: 0;
-         z-index: 2;
-
+      &--first {
+         transform-style: preserve-3d;
+         background: transparent;
+         background-image: url('../img/payments/visa1.svg');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         width: 106px;
+         height: 106px;
+         position: relative;
          @media (max-width: 1025px) {
+            width: 88px;
+            height: 88px;
+         }
+   
+         @media (max-width: 767px) {
             width: 80px;
             height: 80px;
          }
-
-         @media (max-width: 767px) {
-            width: 70px;
-            height: 70px;
-         }
-
+   
          @media (max-width: 413px) {
-            width: 58px;
-            height: 58px;
+            width: 64px;
+            height: 64px;
          }
+
+         &:before {
+            transform: translateZ(-1px);
+            background-image: url('../img/payments/Mastercard.svg');
+            content:'';
+            position: absolute;
+            width: 106px;
+            height: 106px;
+            background-size: contain;
+            background-position: bottom right;
+            bottom: -27px;
+            right: -27px;
+            background-repeat: no-repeat;
+
+            @media (max-width: 1025px) {
+               width: 88px;
+               height: 88px;
+            }
+      
+            @media (max-width: 767px) {
+               width: 80px;
+               height: 80px;
+            }
+      
+            @media (max-width: 413px) {
+               width: 64px;
+               height: 64px;
+            }
+         }
+
       }
+
    }
 
    &__title {
